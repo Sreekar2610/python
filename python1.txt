@@ -1,0 +1,174 @@
+﻿IDLE: integrated development environment
+ a function is a section of reusable code that performs an action.
+ a function has a name its is called or executed by that name.
+ optionally functions can accept arguments and return data.
+ the print() is also a function.
+ input()-Accept standard input
+ print()-Write standard output
+  the len() function
+OOPS:
+-> everything in python is a object.
+-> every object has type
+ example: 'apple' is object type of 'str' means string.
+	   fruit='apple'
+	   > fruit is a string object.
+-> Methods are functions that run aganist a object.
+  Object.method()
+  ex:
+	fruit="apple"
+	print(fruit.upper())
+	print(fruit.lower())
+->String concatination
+	ex: print("i"+"love")
+-> Repeating strings
+	ex:print('-'*3)
+	   happiness='happy'*3
+	   print(happiness)
+->The str() function
+   s=3
+   print(str(s))
+-> Formatting strings
+   print('I {} python.'.format('love'))
+   print('{} {} {}'.format('I','love','python .'))
+   print('i {0} {1}.{1} {0}s me.'.format('love','python'))
+LISTS:
+   A list is a data type that holds an ordered collection of types.
+	the items can be of various data types.
+	list can be accessed by index.
+	we can assign values by index values also.negative index is also used to print the reverse of list.
+ to create a list:
+	list1=[]#empty list
+ to add any item to a list we use append method:
+	list1=['how']
+	list1.append('tar')
+ to add multiple items into a list
+	list1.extend('sree',3,4)
+ we also use insert method to add items
+	list1.insert(3,'tat')
+  in insert method we give index number and values
+SLICLING:
+	To access certain letters or specific items we use slicling.
+	 syntax:
+		list[index1:index2],list[:index2],list[index1:	]
+finding an item in a list we use index method:
+	animals=['cat','dog','rat']
+	cat_index=animals_index('cat')
+	print(cat_index)
+ ##value error in exception handling
+TRY AND EXCEPT :
+	try:
+	 cat_index=animals_index('cat')
+	 print(cat_index)
+	except: 
+         cat_index='no cats found'
+## uppper;
+   listname.upper()
+   prints the name in capital letters
+to sort a list :
+	listname.sort()
+to add two lists:
+	ex=listname1+listname2
+to know the length of the list:
+	len(listname)
+in forloop we use for i in range (start,stop,increment):
+	print(i)
+list is created by square brackets.
+
+DICTIONARIES:
+-> hold key-value pairs called items.
+-> Aka associative arrays,hash tables and hashes.
+
+dict_name={k_1:v_1,k_2:v_2}
+###curly braces{}
+item can accesed by keys
+	dict_name[k_1]
+we can assign values to the also
+ dict_name[k_1]=v_1
+ print(len(dict_name))
+we can create a set of values to a key
+dictname.keys()
+dictname.values()
+we can acces them using indexes
+
+for key_variable in dic_name:
+	#code
+	dict_name[key_var]
+for contact in contacts:
+	#code block
+for person in people:
+	#code block
+dictname.items()
+del dict_name[key]
+TUPLES:
+ a tuple is an immutable list.
+ tuple are ordered
+ values accessed by index
+ iteration,looping,concatenation
+ use when data not change.
+tup_name=()
+using indexing we can access values
+we cant assign values type error
+
+del tuplename
+
+list(),tuple() -> BUILT IN functions returns list and tuple
+max(),min() variables
+
+FILES:
+  Files are great for storage that lasts beyond
+  the execution of a program.
+ open()-Bulit in function that opens a file
+        and returns a file object.
+open(path_of_file)
+path_of_file - can be absolute or relative. 
+ ex: open('path')
+
+hosts=open(path)
+hs=hosts.read()
+print(hs)
+
+read() - returns the entire file
+seek(offset) - change the current postion to offset.
+seek(0) - go to the beginning of the file.
+seek(5) - go to the 5th byte of the file.
+tell() - Determine the current position in the file.
+
+filename_close()
+
+filename.closed is used to check whether file is closed or not.
+
+with open(path) as name:
+ #code
+
+used  for automatically closing the file after the loop ends
+
+open(path,mode)
+mode   description
+r	open for reading(default)
+w	open for writing, truncating first
+x 	create a new file and open it for writing
+a 	open for writing , appending to file
+
++ 	open a file for updating
+b	binary mode
+t 	text mode
+
+filename.mode
+
+file.write('content')
+
+\r carriage return
+\n new line
+
+\r\n windows style endings
+
+filename.tell()
+sleep()
+asctime()
+
+
+valueerror means 
+
+import youranotheprogram name
+import method_name
+i
